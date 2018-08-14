@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fZ9-v1-NRu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Apple Store-->
+        <scene sceneID="LzJ-QK-4tY">
+            <objects>
+                <tableViewController id="9DV-O2-6QS" customClass="ProductsTableViewController" customModule="AppleProducts" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZHl-nb-2pR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="112" id="gXD-Zx-6SG" customClass="ProductTableViewCell" customModule="AppleProducts" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="112"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gXD-Zx-6SG" id="zoB-Qb-6j1">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="111.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PGV-Y1-Gh8">
+                                            <rect key="frame" x="12" y="12" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="HCs-GM-dpY"/>
+                                                <constraint firstAttribute="height" constant="64" id="mda-1g-sD7"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjG-nH-tNy">
+                                            <rect key="frame" x="85" y="12" width="278" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="iPad Pro is an amazing tablet that works really well with drawing work with a pencil" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQY-Sc-xel">
+                                            <rect key="frame" x="84" y="38.5" width="279" height="61"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="jjG-nH-tNy" secondAttribute="trailing" constant="12" id="7fc-IR-pfh"/>
+                                        <constraint firstItem="PGV-Y1-Gh8" firstAttribute="leading" secondItem="zoB-Qb-6j1" secondAttribute="leading" constant="12" id="PSt-sA-iu8"/>
+                                        <constraint firstAttribute="trailing" secondItem="bQY-Sc-xel" secondAttribute="trailing" constant="12" id="bZv-Rs-fSc"/>
+                                        <constraint firstAttribute="bottom" secondItem="bQY-Sc-xel" secondAttribute="bottom" constant="12" id="dCK-Av-iK2"/>
+                                        <constraint firstItem="jjG-nH-tNy" firstAttribute="leading" secondItem="PGV-Y1-Gh8" secondAttribute="trailing" constant="9" id="lKa-Df-qKH"/>
+                                        <constraint firstItem="PGV-Y1-Gh8" firstAttribute="top" secondItem="zoB-Qb-6j1" secondAttribute="top" constant="12" id="lRR-Bx-Zac"/>
+                                        <constraint firstItem="bQY-Sc-xel" firstAttribute="leading" secondItem="PGV-Y1-Gh8" secondAttribute="trailing" constant="8" id="p7C-u2-zap"/>
+                                        <constraint firstItem="jjG-nH-tNy" firstAttribute="top" secondItem="zoB-Qb-6j1" secondAttribute="top" constant="12" id="pNi-RS-kly"/>
+                                        <constraint firstItem="bQY-Sc-xel" firstAttribute="top" secondItem="jjG-nH-tNy" secondAttribute="bottom" constant="5.5" id="zAX-Ql-5ib"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="84" minY="0.0" maxX="12" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="productDescriptionLabel" destination="bQY-Sc-xel" id="beM-9Y-FZk"/>
+                                    <outlet property="productImageView" destination="PGV-Y1-Gh8" id="lDr-5A-I6i"/>
+                                    <outlet property="productTitleLabel" destination="jjG-nH-tNy" id="HXw-wr-p71"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9DV-O2-6QS" id="f12-va-tSB"/>
+                            <outlet property="delegate" destination="9DV-O2-6QS" id="c1W-3g-qli"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Apple Store" id="TKU-uu-HhM"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qcF-zY-YjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="157.87106446776613"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Csh-jt-aE3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fZ9-v1-NRu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UIx-EE-q1w">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9DV-O2-6QS" kind="relationship" relationship="rootViewController" id="6Uf-Zg-cgB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRN-oJ-aEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154.40000000000001" y="157.87106446776613"/>
+        </scene>
+    </scenes>
+</document>
